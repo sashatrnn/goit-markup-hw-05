@@ -151,7 +151,6 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--link-color);
-  outline: transparent;
 }
 
 .site-nav .link.current {
@@ -200,7 +199,6 @@ ul {
 .address .link:hover,
 .address .link:focus {
   color: var(--link-color);
-  outline: transparent;
 }
 
 /* hero section */ 
@@ -267,7 +265,6 @@ ul {
 .button:focus {
   color: var(--primary-white-color);
   background: var(--link-color);
-  outline: transparent;
 }
 
 
@@ -439,7 +436,6 @@ width: calc((100% - 72px) / 4);
 .social-link:hover,
 .social-link:focus {
   background-color: var(--link-color);
-  outline: transparent;
 }
 
 /* Customers section*/
@@ -519,6 +515,7 @@ width: calc((100% - 72px) / 4);
   background: var(--link-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-color: transparent;
+  outline: transparent;
 }
 
 .photo-cards {
@@ -550,11 +547,22 @@ width: calc((100% - 72px) / 4);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-
+  color: var(--title-text-color);
 }
 
-.card-item:hover,
+.photo-text {
+  color: var(--primary-text-color);
+}
+
+/*.card-item:hover,
 .card-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-color: var(--alternative-color);
+  outline: transparent;
+}*/
+
+.card-link:hover,
+.card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-color: var(--alternative-color);
   outline: transparent;
@@ -657,7 +665,6 @@ width: calc((100% - 72px) / 4);
 .media-link:hover,
 .media-link:focus {
   background-color: var(--green-color);
-  outline: transparent;
 }
 
 /* MODAL WINDOW */
