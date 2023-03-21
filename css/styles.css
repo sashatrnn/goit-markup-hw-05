@@ -425,8 +425,7 @@ width: calc((100% - 72px) / 4);
   border-radius: 50%;
   background-color: var(--accent-color);
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-distibution);
+  transition: transform 250ms var(--time-distibution);
 }
 
 .social-icon {
@@ -454,6 +453,7 @@ width: calc((100% - 72px) / 4);
 
 .customers-icon{
   fill: var(--icon-color);
+  transition: fill 250ms var(--time-distibution);
 }
 
 .client-link{
@@ -466,8 +466,7 @@ width: calc((100% - 72px) / 4);
   border: 1px solid #8E8F99;
   border-radius: 4px;
 
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-distibution);
+  transition: border 250ms var(--time-distibution);
 }
 
 .client-link:hover,
@@ -554,13 +553,6 @@ width: calc((100% - 72px) / 4);
   color: var(--primary-text-color);
 }
 
-/*.card-item:hover,
-.card-item:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-color: var(--alternative-color);
-  outline: transparent;
-}*/
-
 .card-link:hover,
 .card-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -589,9 +581,15 @@ width: calc((100% - 72px) / 4);
   transition: transform 250ms var(--time-distibution);
 }
 
-.card-item:hover .overlay{
+/*.card-item:hover .overlay{
+  transform: translateX(0);
+}*/
+
+.card-link:hover .overlay,
+.card-link:focus .overlay{
   transform: translateX(0);
 }
+
 
 .overlay-text {
   color: var(--alternative-color)
