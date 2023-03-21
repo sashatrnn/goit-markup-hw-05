@@ -425,7 +425,7 @@ width: calc((100% - 72px) / 4);
   border-radius: 50%;
   background-color: var(--accent-color);
 
-  transition: transform 250ms var(--time-distibution);
+  transition: background 250ms var(--time-distibution);
 }
 
 .social-icon {
